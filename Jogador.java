@@ -1,24 +1,25 @@
-package intro;
+package entities;
 
 /*
- * Jogador
+ * Alunos: Larissa Perazzo e Luiz Felipe Oliveira
  */
 
 public class Jogador {
 	
-	//atributos
-	public String nome;
-	public String sobreNome;
-	public Integer idade;
-	public Time time;
+	private String jogadores[] = new String[5];
 	
-	//construtor
-	public Jogador() {
-		time = new Time();
+
+	public String[] getJogadores() {
+		return this.jogadores;
+	}
+
+	public String toString(int i) {
+		return (i+1)+" - "+jogadores[i];
+	}
+
+	public void setJogadores(String nome[]) {
+		this.jogadores = nome;
 	}
 	
-	//métodos
-	public void mostrarNomeSobrenome() {
-		System.out.println(this.nome + " " + this.sobreNome);
-	}
+	
 }

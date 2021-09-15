@@ -1,10 +1,20 @@
-package intro;
+package entities;
+
+/*
+ * Alunos: Larissa Perazzo e Luiz Felipe Oliveira
+ */
 
 public class Time {
+	private String nome;
 
-	//atributos
-	public String nome;
-	public String escudo;
+	public Time() {
+	}
 
+	public String getNome() {
+		return this.nome;
+	}
 
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
 }
